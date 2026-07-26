@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 export default function AboutCard()
 {
     return(
@@ -18,9 +20,9 @@ export default function AboutCard()
           </div>
 
           <div>
-            <button className="bg-white hover:bg-gray-50 text-green-900 font-semibold text-xs sm:text-sm border border-gray-300 rounded-md px-5 py-2.5 shadow-sm transition duration-200 cursor-pointer">
+            <Link to="/our-story" className="inline-block bg-white hover:bg-gray-50 text-green-900 font-semibold text-xs sm:text-sm border border-gray-300 rounded-md px-5 py-2.5 shadow-sm transition duration-200 cursor-pointer">
               Learn More About Us
-            </button>
+            </Link>
           </div>
         </div>
     )

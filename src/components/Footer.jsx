@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 export default function Footer() {
   return (
     <footer className="bg-[#09291A] text-white w-full mt-10">
@@ -18,29 +20,29 @@ export default function Footer() {
         <div>
           <h3 className="font-semibold text-sm mb-3">SHOP</h3>
           <ul className="flex flex-col gap-2 text-xs text-gray-300">
-            <li><a className="hover:text-white transition cursor-pointer">Garlic Pickle</a></li>
-            <li><a className="hover:text-white transition cursor-pointer">Sun-Dried Tomatoes</a></li>
-            <li><a className="hover:text-white transition cursor-pointer">Mushroom Powder</a></li>
-            <li><a className="hover:text-white transition cursor-pointer">Pisi Noon</a></li>
+            <li><Link to="/product/1" className="hover:text-white transition cursor-pointer">Garlic Pickle</Link></li>
+            <li><Link to="/product/2" className="hover:text-white transition cursor-pointer">Sun-Dried Tomatoes</Link></li>
+            <li><Link to="/product/3" className="hover:text-white transition cursor-pointer">Mushroom Powder</Link></li>
+            <li><Link to="/product/4" className="hover:text-white transition cursor-pointer">Pisi Noon</Link></li>
           </ul>
         </div>
 
         <div>
           <h3 className="font-semibold text-sm mb-3">COMPANY</h3>
           <ul className="flex flex-col gap-2 text-xs text-gray-300">
-            <li><a className="hover:text-white transition cursor-pointer">Our Story</a></li>
-            <li><a className="hover:text-white transition cursor-pointer">From Our Farm</a></li>
-            <li><a className="hover:text-white transition cursor-pointer">Recipes</a></li>
-            <li><a className="hover:text-white transition cursor-pointer">Retail Partners</a></li>
+            <li><Link to="/our-story" className="hover:text-white transition cursor-pointer">Our Story</Link></li>
+            <li><Link to="/from-our-farm" className="hover:text-white transition cursor-pointer">From Our Farm</Link></li>
+            <li><Link to="/recipes" className="hover:text-white transition cursor-pointer">Recipes</Link></li>
+            <li><Link to="/retail-partners" className="hover:text-white transition cursor-pointer">Retail Partners</Link></li>
           </ul>
         </div>
 
         <div>
           <h3 className="font-semibold text-sm mb-3">SUPPORT</h3>
           <ul className="flex flex-col gap-2 text-xs text-gray-300">
-            <li><a className="hover:text-white transition cursor-pointer">FAQ</a></li>
-            <li><a className="hover:text-white transition cursor-pointer">Contact</a></li>
-            <li><a className="hover:text-white transition cursor-pointer">Terms & Conditions</a></li>
+            <li><Link to="/faq" className="hover:text-white transition cursor-pointer">FAQ</Link></li>
+            <li><Link to="/contact" className="hover:text-white transition cursor-pointer">Contact</Link></li>
+            <li><Link to="/terms-conditions" className="hover:text-white transition cursor-pointer">Terms & Conditions</Link></li>
           </ul>
         </div>
       </div>

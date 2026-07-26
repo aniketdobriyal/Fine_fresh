@@ -42,7 +42,7 @@ function NavBar() {
                     <ul className="flex items-center font-medium text-sm tracking-wide gap-2">
                         {navLinks.map((link) => (
                             <li key={link.path}>
-                                <Link to={link.path} className="hover:text-green-800 transition cursor-pointer">{link.label}</Link>
+                                <Link to={link.path} className="hover:text-green-800 transition mx-1 cursor-pointer">{link.label}</Link>
                             </li>
                         ))}
                     </ul>
@@ -65,7 +65,7 @@ function NavBar() {
                         </svg>
                     </button>
                     <div className="hidden md:block">
-                        <button className="bg-[#092C1B] hover:bg-[#061e12] text-white py-2 px-5 rounded-md font-semibold tracking-wide text-sm transition cursor-pointer">Shop Now</button>
+                        <Link to="/shop" className="inline-block bg-[#092C1B] hover:bg-[#061e12] text-white py-2 px-5 rounded-md font-semibold tracking-wide text-sm transition cursor-pointer">Shop Now</Link>
                     </div>
                 </div>
             </div>
@@ -81,7 +81,7 @@ function NavBar() {
                             </li>
                         ))}
                         <li className="mt-2 md:hidden">
-                            <button className="w-full bg-[#092C1B] text-white py-2 rounded-md font-semibold text-center transition cursor-pointer">Shop Now</button>
+                            <Link to="/shop" className="block w-full bg-[#092C1B] text-white py-2 rounded-md font-semibold text-center transition cursor-pointer" onClick={() => setIsOpen(false)}>Shop Now</Link>
                         </li>
                     </ul>
                 </div>
